@@ -84,7 +84,7 @@ const Register = () => {
 
           <div className="rounded-full form-control w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600  flex">
           <Field name = "password" type={isHide?"password": "text"}  id="password" className="w-full focus:outline-none" placeholder="Enter password" />
-          <button onClick={()=>setIsHide(!isHide)}className='text-zinc-500 type="button cursor-pointer'>
+          <button type="button" onClick={()=>setIsHide(!isHide)}className='text-zinc-500 cursor-pointer'>
             {isHide? "Show" : "Hide"}
           </button>
           </div>
